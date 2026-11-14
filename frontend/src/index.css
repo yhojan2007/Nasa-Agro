@@ -1,0 +1,194 @@
+:root {
+  color: #1e2a24;
+  background: #f3efe4;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  background: #1d6b45;
+  color: #f7f4ec;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.app {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+header h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  margin: 0.1rem 0 0.4rem;
+}
+
+.eyebrow,
+.meta {
+  color: #5c675f;
+  font-size: 0.95rem;
+}
+
+nav,
+.zones,
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+
+nav button,
+.zones button {
+  background: #efe8d8;
+  color: #1e2a24;
+}
+
+nav button.active {
+  background: #1d6b45;
+  color: #f7f4ec;
+}
+
+.search input,
+label input,
+label select,
+.month select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #cfc6b4;
+  border-radius: 12px;
+  padding: 0.4rem 0.7rem;
+  background: #fffdf8;
+}
+
+.search input {
+  flex: 1 1 180px;
+}
+
+.map {
+  height: 52vh;
+  min-height: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.banner {
+  background: #fff4d8;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.aviso {
+  background: #e7f2ea;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.alerts,
+.ranking,
+.panel form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.alert,
+.crop,
+.panel,
+.chart-wrap {
+  background: #fffdf8;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  margin-top: 0.8rem;
+}
+
+.alert.ok {
+  outline: 3px solid #1d6b45;
+}
+
+.alert.warn {
+  outline: 3px solid #c4841d;
+}
+
+.alert.bad {
+  outline: 3px solid #9b2c2c;
+}
+
+.crop header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.crop header strong {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 2rem;
+}
+
+.tag {
+  color: #5c675f;
+}
+
+.places {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.places button {
+  width: 100%;
+  border-radius: 12px;
+  background: #fffdf8;
+  color: #1e2a24;
+  text-align: left;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e6e0d4;
+}
+
+.about ul {
+  padding-left: 1.2rem;
+}
